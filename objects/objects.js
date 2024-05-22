@@ -3,7 +3,10 @@
 const myObject = {
   property: "Value",
   otherProperty: 77,
-  "obnoxious property": function () {
-    // do stuff!
+  "obnoxious property": () => {
+    console.log("Yup, it's me!");
   },
 };
+
+let anObject = myObject["obnoxious property"];
+anObject();
